@@ -56,6 +56,7 @@ namespace ProjectMongo.Controllers
 
         #region POST
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Post([FromBody] UserVO user)
         {
 
