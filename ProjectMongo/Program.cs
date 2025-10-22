@@ -77,14 +77,12 @@ builder.Services.AddScoped<IParser<User, UserVO>, UserConverter>();
 builder.Services.AddScoped<IParser<LoginVO, User>, LoginVoToUserConverter>();
 builder.Services.AddScoped<IUserBusiness, UserBusinessImplementation>();
 
-// Injeção de Dependência (Para o TokenService)
 builder.Services.AddTransient<ITokenService, TokenService>();
 
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Swagger (Modificado para suportar o "Authorize" do JWT)
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -99,7 +97,7 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 
-    // Adiciona o cadeado de "Authorize" no Swagger
+
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = @"JWT Authorization header using the Bearer scheme. 

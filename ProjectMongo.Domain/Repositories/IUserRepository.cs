@@ -13,9 +13,7 @@ namespace ProjectMongo.Domain.Repositories
 
         Task<User> ValidateCredentials(User user);
         Task<User> GetByUsername(string userName);
-
         Task<User> RefreshUserInfo(User user);
-
         Task<bool> RevokeToken(string userName);
     }
 }
