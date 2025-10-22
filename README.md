@@ -50,6 +50,7 @@ Configure your appsettings.json with the MongoDbSettings (your connection string
 
 Run the ProjectMongo.API project.
 
+--------------------------------------------------------------------------------------------------------------------------------
 
 Este é um projeto de API REST construído com .NET 8 e MongoDB, focado em criar um sistema de autenticação e gerenciamento de usuários.
 
