@@ -1,7 +1,5 @@
 This is a REST API project built with .NET 8 and MongoDB, focused on creating an authentication and user management system.
 
-The main goal was to migrate from a monolithic architecture (from a previous project) to a clean, scalable architecture following Domain-Driven Design (DDD) principles.
-
 What was done in this project?
 .NET 8 REST API: All endpoints for login and user CRUD.
 
@@ -53,8 +51,6 @@ Run the ProjectMongo.API project.
 --------------------------------------------------------------------------------------------------------------------------------
 
 Este é um projeto de API REST construído com .NET 8 e MongoDB, focado em criar um sistema de autenticação e gerenciamento de usuários.
-
-O principal objetivo foi migrar de uma arquitetura monolítica (de um projeto anterior) para uma arquitetura limpa e escalável, seguindo os princípios do Domain-Driven Design (DDD).
 
 O que foi feito neste projeto?
 API REST com .NET 8: Todos os endpoints para login e CRUD de usuários.
